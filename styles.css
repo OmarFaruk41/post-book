@@ -1,0 +1,29 @@
+*{
+  font-family: "Poppins", sans-serif;  
+}
+.login-form{
+    border: solid 1px #ccc;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h3 {
+    text-align: center;
+    color: green;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    background-color: rgb(67, 143, 67);
+    color: white;
+    width: 15%;
+}
