@@ -1,4 +1,4 @@
-const handleLogin = () => {
+const handleLogin = async () => {
     const userIdInput = document.getElementById('user-id');
     const passwordInput = document.getElementById('password');
 
@@ -10,7 +10,15 @@ const handleLogin = () => {
         password: password,
     };
 
-    fetchUserInfo(user);
+    const UserInfo = await fetchUserInfo(user);
+    
+    const errorElement = document.getElementById('user-login-error');
+    if (UserInfo.length === 0) {
+      errorElement.classList.remove('hidden');
+    }   
+    else {
+        errorElement.classList.add('hidden');
+    }
 };
 
 
@@ -32,7 +40,7 @@ const fetchUserInfo = async(user) => {
         console.log('Error connecting to the server:', err);
     
 }   finally {
-        console.log('Request completed: ', data);
+       return data;
     }
 
 };

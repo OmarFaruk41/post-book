@@ -39,3 +39,12 @@ form {
     margin: 0 auto;
     cursor: pointer;
 }
+.error {
+    color: red;
+}
+.error h3 {
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
