@@ -11,13 +11,18 @@ const handleLogin = async () => {
     };
 
     const UserInfo = await fetchUserInfo(user);
-    
+    // user data did not match
     const errorElement = document.getElementById('user-login-error');
     if (UserInfo.length === 0) {
       errorElement.classList.remove('hidden');
     }   
     else {
         errorElement.classList.add('hidden');
+
+        // save user info before jumping to next page
+        localStorage.setItem("loggedInUser",JSON.stringify(UserInfo[0]));
+        // then make a jump to a new page
+        window.location.href = "/post.html";
     }
 };
 
