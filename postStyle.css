@@ -1,0 +1,90 @@
+*{
+  font-family: "Poppins", sans-serif;  
+}
+#post-container{
+    width: 90%;
+    background-color: rgb(158, 144, 144);
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post {
+    width: 60%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-user-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.post-username {
+    margin: 0;
+}
+.post-time{
+    color: rgb(82, 75, 75);
+}
+.post-image {
+    display: flex;
+    justify-content: center;
+}
+.post-image img {
+    width: 50%;
+    border-radius:5px;
+    margin: 15px;
+}
+
+.comment{
+    display: flex;
+    margin-bottom: 14px;
+    align-items: center;
+    gap: 10px;
+}
+.comment-user-image img {
+     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.comment-text-container{
+    background-color: rgb(134, 129, 129);
+    padding: 10px;
+    border-radius: 10px;
+}
+.comment-text-container h4,p {
+    margin: 0;
+}
+.comment-text-container h4{
+    margin-bottom: 4px;
+}
+.postComment-holder{
+    display: flex;
+    gap: 10px;
+    margin: 15px ;
+}
+.post-comment-input-field-holder{
+    width: 60%;
+}
+.post-comment-input-field{
+    padding: 10px;
+    outline: none;
+    border:1px solid rgb(94, 92, 92);
+    width: 80%;
+}
+.postComment-btn{
+    padding: 10px;
+    color: beige;
+    background-color: rgb(66, 134, 70);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
