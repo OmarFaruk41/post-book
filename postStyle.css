@@ -20,6 +20,7 @@
 .post-header {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 5px;
 }
 
@@ -27,12 +28,17 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    
 }
 .post-username {
-    margin: 0;
+    margin: 0 ;
+    display: flex;
+    align-items: flex-start;
+ 
 }
 .post-time{
     color: rgb(82, 75, 75);
+    
 }
 .post-image {
     display: flex;
